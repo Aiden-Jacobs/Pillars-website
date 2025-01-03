@@ -53,5 +53,3 @@ async function setPhoneNumberCount() {
     
 }
 setPhoneNumberCount();
-
-// added element ids to the html
