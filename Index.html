@@ -83,6 +83,46 @@
             font-size: 12px;
             color: #555;
         }
+        
+        .about-button button:hover {
+            background-color: black;
+            color: white;
+        }
+        .about-button button {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 4px;
+            position: absolute;
+            top: 30px;
+            right: 20px;
+            width: 7%;
+            font: 1em sans-serif;
+            font-weight: bold;
+            
+        }
+        @media screen and (max-width: 480px) {
+            .about-button button {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 4px;
+            /* center left and right*/
+            
+
+            
+            width: 35%;
+            font: 1em sans-serif;
+            font-weight: bold;
+            
+        }
+        }
     </style>
     <script type="module" src="log.js"></script>
 </head>
@@ -90,6 +130,9 @@
     <div class="logo">
         <!-- add the logo image -->
         <img src="logo.png" alt="Pillars Logo">
+    </div>
+    <div class="about-button">
+        <button id="about-us">About Us</button>
     </div>
     <div class="container">
         <div class="card">
@@ -102,6 +145,7 @@
                 <input type="text" placeholder="Phone number" id="phone-number">
                 <button id="sign-up">Sign Up</button>
             </div>
+
         </div>
     </div>
 </body>
